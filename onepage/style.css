@@ -1,0 +1,155 @@
+html{
+    width: 100%;
+    height:100%;
+}
+body{
+    width: 100%;
+    height:100%;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+.top_display{
+	 background-color: blue;
+     width: 100%;
+	 height: 8%;
+}
+.p_bar{
+	color:white;
+	display:flex;
+    align-items:flex-end;
+    flex-direction: row-reverse;
+}
+a{
+	font-family: Impact;
+	font-size: 20pt;
+	color: white;
+	text-decoration: none;
+    }
+ a:hover{
+	color: yellow;
+	text-decoration: none;
+ }
+ .base{
+	width: 100%;
+	height: 100%;
+	background-color: #578CB5;
+	text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+ }
+ .sobre_base{
+	background-color: #578CB5;
+	margin:0;
+	padding-left:25px;
+	height: auto;
+	font-size: 25px;
+ }
+ .estilo_sobre{
+	color: white;
+	
+ }
+ p{
+	color:black;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+ }
+ p2{
+	color:black;
+	font-weight: bold;
+	padding: 0;
+	margin: 0; 
+ }
+ p3{
+	color:black;
+	font-weight: bold;
+	padding: 0;
+	margin: 0; 
+ }
+ h1{
+	color:black;
+	margin:0;
+ }
+ h2{
+	color:black;
+	margin:0;
+ }
+ .img{
+	border-radius: 10px;
+	width: 100%;
+	height: 100%;
+ }
+ .local_img{
+	padding-left: 900px;
+ }
+ .sobre{
+	width: 100%;
+	height: 5%;
+	background-color: black;
+	text-align: center;
+	margin:0;
+	padding:0;
+ }
+ #sobre_mim{
+	width: 100%;
+	height: 20%;
+	background-color: #627c91;
+	margin: 0;
+	text-align: justify;
+ }
+ .p_sobre{
+	text-align: justify;
+	padding-left: 30px;
+	font-size: 30px;
+	padding-left:100px;
+	padding-right: 100px;
+	padding-top: 45px;
+ }
+ #sobre_tecnologia{
+	width: 100%;
+	height: 5%;
+	background-color: black;
+	text-align: center;
+	margin:0;
+	padding:0;
+ }
+ #sobre_sobremim{
+	width: 100%;
+	height: 5%;
+	background-color: black;
+	text-align: center;
+	margin:0;
+	padding:0;
+ }
+ #sobre_contato{
+	width: 100%;
+	height: 5%;
+	background-color: black;
+	text-align: center;
+	margin:0;
+	padding:0;
+ }
+ #tecnologia{
+	width: 100%;
+	height: 80%;
+	background-color: #627c91;
+	margin: 0;
+	text-align: center;
+ }
+ #contato{
+	width: 100%;
+	height: 20%;
+	background-color: #627c91;
+	margin: 0;
+	font-size: 20px;
+	text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+ 

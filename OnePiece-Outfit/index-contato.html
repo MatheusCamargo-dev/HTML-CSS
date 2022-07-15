@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav-icons/favicon-32x32.png">
+    <title>One Piece Outfit</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="Slides()">
+    <header class="header">
+            <div id="logo-header">
+                <img src="./img/logo_onepiece.png" width="100" height="100" alt="logo">
+                <a href="index.html"><span> One Piece Outfit </span></a>
+            </div>
+            <div id="nav-header">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html" class="glow">Página Inicial</a></li>
+                        <li><a href="./index-produtos.html" class="glow">Produtos</a></li>
+                        <li><a href="./index-sobre.html" class="glow">Sobre nós</a></li>
+                        <li><a href="./index-contato.html" class="glow">Contatos</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <section> <!--section-->
+        <div id="formulario"> <!--formulario-->
+            <div id="box-forms"> <!-- caixa para design-->
+                <form action="" id="form-style">
+                    <fieldset> <!--fieldset é um modelo de agrupamento dentro de um form-->
+                        <legend> <!--legenda do fieldset-->
+                            Formulário de clientes
+                        </legend>
+                        <div class="inputbox"> <!--input de nome-->
+                            <input type="text" name="nome" id="nome" class="inputUser" required>
+                            <!-- required força o usuário a preencher o campo enviando um alerta-->
+                            <label for="nome" class="labelInput">Nome Completo</label>
+                        </div>
+                        <div class="inputbox"> <!-- input de email-->
+                            <input type="text" name="email-forms" id="email-forms" class="inputUser" required>
+                            <label for="email-forms" class="labelInput">Email</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                            <label for="telefone" class="labelInput">Telefone</label>
+                        </div>
+                        <span>Sexo:</span>
+                        <!--span é uma tag parecida como <p> para fins de texto e estilo-->
+                        <div> <!-- input do tipo radio para os genêros-->
+                            <input type="radio" name="genero" id="feminino" value="feminino" required>
+                            <label for="feminino">Feminino</label>
+                            <br>
+                            <input type="radio" name="genero" id="masculino" value="masculino" required>
+                            <label for="masculino">Masculino</label>
+                            <br>
+                            <input type="radio" name="genero" id="outro" value="outro" required>
+                            <label for="outro">Outro</label>
+                        </div>
+                        <div> <!--input para data de nascimento-->
+                            <label for="data"><b> Data de nascimento</b></label>
+                            <input type="date" name="data" id="data" required>
+                        </div>
+                        <div class="inputbox"> <!--input para cidade-->
+                            <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                            <label for="cidade" class="labelInput">Cidade</label>
+                        </div>
+                        <div class="inputbox"> <!--input para o estado-->
+                            <input type="text" name="estado" id="estado" class="inputUser" required>
+                            <label for="estado" class="labelInput">Estado</label>
+                        </div>
+                        <div class="inputbox"> <!--input pro endereço-->
+                            <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                            <label for="endereco" class="labelInput">Endereço</label>
+                        </div>
+                        <span>Mensagem:</span>
+                        <div class="inputbox"> <!--input para mensagens do usuário-->
+                            <textarea cols="40" rows="10" class="msg" name="msg" title="msg"> </textarea>
+                        </div>
+                        <input type="submit" name="submit" id="submit" onBlur="alert('Enviado com sucesso!')">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-style"> <!--footer-->
+        <h1> RECEBA DESCONTOS EXCLUSIVOS</h1>
+        <p> Cadastre seu email para receber novidas e descontos!</p>
+        <input type="email" value placeholder="E-mail" id="email">
+        <div id="politica">
+            <div>
+                <a href=""><span> Política de Reembolso</span></a>
+                <a href=""><span> Política de Entrega</span></a>
+                <a href=""><span> Termos de serviço</span></a>
+                <a href=""><span> Política de privacidade</span></a>
+            </div>
+            <span>
+                © 2022 One Piece Outfit - Produtos Geek
+                Todos os direitos reservados.
+            </span>
+        </div>
+    </footer>
+</body>
+</html>

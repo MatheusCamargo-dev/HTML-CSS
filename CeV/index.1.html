@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test DOM</title>
+    <style>
+        body{
+            background-color: black;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #msg{
+            background-color: blue;
+            color:white;
+            font-size: normal 18pt 'Inter';
+            width:50vw;
+            height:50vh;
+            position:relative;
+            margin: 25vh auto;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            }
+    </style>
+</head>
+<body>
+    <div id="msg">
+        Eventos
+    </div>
+
+    <script>
+        var click = document.querySelector('div#msg')
+        function entrar(){
+            
+            click.innerText = 'Entrei'
+            click.style.backgroundColor = 'red'
+        }
+        function sair(){
+            click.innerText = 'Sai'
+            click.style.backgroundColor = 'blue'
+        }
+        function clicar(){
+            click.innerText = 'Click!'
+            click.style.backgroundColor = 'green'
+        }
+        click.addEventListener('click',clicar)
+        click.addEventListener('mouseenter',entrar)
+        click.addEventListener('mouseleave',sair)
+    </script>
+</body>
+</html>

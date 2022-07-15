@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- padrão utf-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- elementos de captura das dimensões da tela -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav-icons/favicon-32x32.png">
+    <!-- icone da página-->
+    <title>One Piece Outfit</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js" defer></script>
+    <!--defer serve para o java script ser carregado após todos os demais elementos da página já 
+    tiverem sido carregados-->
+</head>
+<body onload="Slides()"> <!--body carrega o script Slides()-->
+    <header class="header"> <!-- Header -->
+            <div id="logo-header"> <!-- Elementos do header-->
+                <img src="./img/logo_onepiece.png" width="100" height="100" alt="logo">
+                <a href="index.html"><span> One Piece Outfit </span></a>
+            </div>
+            <div id="nav-header">
+                <nav> <!-- nav bar-->
+                    <ul>
+                        <li><a href="./index.html" class="glow">Página Inicial</a></li>
+                        <li><a href="./index-produtos.html" class="glow">Produtos</a></li>
+                        <li><a href="./index-sobre.html" class="glow">Sobre nós</a></li>
+                        <li><a href="./index-contato.html" class="glow">Contatos</a></li>
+                    </ul>
+                </nav>
+            </div>
+    <section> <!--section da página para identificar uma seção -->
+        <div id="row-direction"> <!-- div pra deixar os elementos em row-direction(padrão)-->
+            <div id="welcome"> <!-- div com os elementos de boas vindas-->
+                <div id="align-center"> <!-- div para posicionar os elementos-->
+                    <img src="./img/luffy.png" alt="luffy" class="rounded"> <!-- alt serve para informar um nome caso a imagem não carregue corretamente-->
+                    <h1>Seja Bem vindo!</h1>
+                    <p> Junte-se ao nosso bando com as melhores roupas!</p>
+                </div>
+            </div>
+            <div id="slider">
+                <div id="slides"> <!-- div box onde vai ficar os slides-->
+                    <input type="radio" name="radio-btn" id="radio1" title="btn">
+                    <input type="radio" name="radio-btn" id="radio2" title="btn">
+                    <input type="radio" name="radio-btn" id="radio3" title="btn">
+                    <input type="radio" name="radio-btn" id="radio4" title="btn">
+
+                    <div class="slide first" >
+                        <img src="./img/roupa_modelo.jpg" alt="roupas">
+                    </div>
+                    <div class="slide" >
+                        <img src="./img/moletom_roronoa.jpg" alt="zoro">
+                    </div>
+                    <div class="slide" >
+                        <img src="./img/moletom_sanji.jpg" alt="sanji">
+                    </div>
+                    <div class="slide" >
+                        <img src="./img/moletom_nami.jpg" alt="nami">
+                    </div>
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                    <div class="manual-navigation">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="wallpaper"> <!--section-->
+        <div id="objetivo"> <!-- div box onde contém o estilo dos elementos abaixo-->
+            <div id="align-center">
+                <h1>NOSSO OBJETIVO</h1>
+                <p> Nosso One Piece são os nossos clientes. 
+                    Estamos prontos para qualquer desafio, contamos com os melhores
+                    piratas para nos ajudar a preparar o seu pedido e entregá-lo o quanto antes!
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-style"> <!--footer-->
+        <h1> RECEBA DESCONTOS EXCLUSIVOS</h1>
+        <p> Cadastre seu email para receber novidas e descontos!</p>
+        <input type="email" value placeholder="E-mail" id="email"> <!--input de email para cadastrar-->
+        <div id="politica"> <!-- Politicas do site (meramente ilustrativo)-->
+            <div>
+                <a href=""><span> Política de Reembolso</span></a>
+                <a href=""><span> Política de Entrega</span></a>
+                <a href=""><span> Termos de serviço</span></a>
+                <a href=""><span> Política de privacidade</span></a>
+            </div>
+            <span>
+                © 2022 One Piece Outfit - Produtos Geek
+                Todos os direitos reservados.
+            </span>
+        </div>
+        
+    </footer>
+</body>
+</html>

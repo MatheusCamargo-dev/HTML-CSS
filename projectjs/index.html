@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>RATATATA</title>
+</head>
+<body>
+	<h1>TRIPULAÇÃO</h1>
+	Você é da TRIPULAÇÃO?<input type="text" id="txtresp" title="resp">
+	<input type="button" value="Enviar" class="botao">
+	<div id="res" >
+	</div>
+	<script>
+		var resposta = document.querySelector('input#txtresp')
+		var res = document.querySelector('div#res')
+		var botao = document.querySelector('.botao')
+		function clicar(){
+			if(resposta.value.toUpperCase()=='SIM'){
+				res.innerHTML = (`BEM VINDO A TRIPE !`)
+				var img = document.createElement("img");
+				img.src = 'Raye.jpg';
+				img.width = 500;
+				img.height = 500;
+				document.body.appendChild(img)
+			}
+			else{
+				res.innerHTML = (`Vai pra prancha!`)
+			}
+		}
+		botao.addEventListener('click',clicar)
+	</script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav-icons/favicon-32x32.png">
+    <title>One Piece Outfit</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header-stick">
+            <div id="logo-header">
+                <img src="./img/logo_onepiece.png" width="100" height="100" alt="logo">
+                <a href="index.html"><span> One Piece Outfit </span></a>
+            </div>
+            <div id="nav-header">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html" class="glow">Página Inicial</a></li>
+                        <li><a href="./index-produtos.html" class="glow">Produtos</a></li>
+                        <li><a href="./index-sobre.html" class="glow">Sobre nós</a></li>
+                        <li><a href="./index-contato.html" class="glow">Contatos</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <section class="store">
+        <div id="container"> <!-- uma caixa para agrupar todos os produtos-->
+            <div id="produto"> <!-- div base para a estilização de todos os produtos-->
+                <a href="">
+                    <img src="./img/moletom_roronoa.jpg" alt="">
+                    <span> MOLETOM - RORONOA ZORO</span>
+                    <div id="price">
+                        <span id="desconto">
+                            R$310,00
+                        </span>
+                        <span>
+                            R$229,00
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div id="produto">
+                <a href="">
+                    <img src="./img/moletom_luffy.jpg" alt="">
+                    <span> MOLETOM - MONKEY D. LUFFY</span>
+                    <div id="price">
+                        <span id="desconto">
+                            R$300,00
+                        </span>
+                        <span>
+                            R$249,00
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div id="produto">
+                <a href="">
+                <img src="./img/moletom_sanji.jpg" alt="">
+                <span> MOLETOM - VINSMOKE SANJI</span>
+                <div id="price">
+                    <span id="desconto">
+                        R$256,00
+                    </span>
+                    <span>
+                        R$199,99
+                    </span>
+                </div>
+                </a>
+            </div>
+            <div id="produto">
+                <a href="">
+                    <img src="./img/roupa_bando.jpg" alt="">
+                    <span> CAMISETA - CHAPÉU DE PALHA</span>
+                    <div id="price">
+                        <span id="desconto">
+                            R$100,00
+                        </span>
+                        <span>
+                            R$50,00
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div id="produto">
+                <a href="">
+                    <img src="./img/moletom_nami.jpg" alt="">
+                    <span> MOLETOM - NAMI NAVEGADORA </span>
+                    <div id="price">
+                        <span id="desconto">
+                            R$269,00
+                        </span>
+                        <span>
+                            R$169,99
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div id="produto">
+                <a href="">
+                    <img src="./img/camiseta_usopp.jpg" alt="">
+                    <span> CAMISETA - USOPP</span>
+                    <div id="price">
+                        <span id="desconto">
+                            R$156,00
+                        </span>
+                        <span>
+                            R$119,99
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div id="produto">
+                <a href="">
+                    <img src="./img/camiseta_chopper.jpg" alt="">
+                    <span> CAMISETA - CHOPPER</span>
+                    <div id="price">
+                        <span id="desconto">
+                            R$189,99
+                        </span>
+                        <span>
+                            R$170,00
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div id="produto">
+                <a href="">
+                    <img src="./img/camisa_bando.jpg" alt="">
+                    <span> CAMISA - BANDO CHAPÉU DE PALHA</span>
+                    <div id="price">
+                        <span id="desconto">
+                            R$89,99
+                        </span>
+                        <span>
+                            R$70,00
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div id="produto">
+                <a href="">
+                    <img src="./img/camiseta_casual.jpg" alt="">
+                    <span> CAMISETA - CASUAL PROCURADOS</span>
+                    <div id="price">
+                        <span id="desconto">
+                            R$119,99
+                        </span>
+                        <span>
+                            R$99,99
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="pagination"> <!--botões de rediracionamento para a segunda página-->
+            <a href="./index-produtos.html" class="glow">1</a>
+            <a href="./index-produtos-2.html" class="glow">2</a>
+            <a href="./index-produtos-2.html" aria-label="next page">
+                <button type="button" id="btn" title="button">
+                    <img src="./img/next.png" width="30px" height="30px" alt="">
+                </button>
+            </a>
+        </div>
+    </section>
+    <footer class="footer-style">
+        <h1> RECEBA DESCONTOS EXCLUSIVOS</h1>
+        <p> Cadastre seu email para receber novidas e descontos!</p>
+        <input type="email" value placeholder="E-mail" id="email">
+        <div id="politica">
+            <div>
+                <a href=""><span> Política de Reembolso</span></a>
+                <a href=""><span> Política de Entrega</span></a>
+                <a href=""><span> Termos de serviço</span></a>
+                <a href=""><span> Política de privacidade</span></a>
+            </div>
+            <span>
+                © 2022 One Piece Outfit - Produtos Geek
+                Todos os direitos reservados.
+            </span>
+        </div>
+        
+    </footer>
+</body>
+</html>

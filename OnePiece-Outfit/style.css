@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+/* importando fonte do google*/
+*{
+    /*limpando e padronizando alguns elementos da página*/
+    margin:0;
+    padding:0; 
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    overflow-x: hidden;
+     /* removendo o elemento overflow do eixo x do body 
+     (elemento de rolagem horizontal da página)
+     */
+}
+:root{
+    /* gerando variaveis de cores para serem utilizadas*/
+    --white: #ffffff;
+    --whitesmoke: #F9F9F9;
+    --light-grey: #ECECEC;
+    --grey: #C4C4C4;
+    --medium-grey:#A7A7A7;
+    --deep-grey:#343434;
+    --black:rgb(0, 0, 0);
+    --blue:rgb(27, 121, 243);
+    --red:rgb(207, 60, 63);
+}
+.header{
+    background-color: #343434;
+    display: flex;
+    width: 100%;
+    min-height: 8vh;
+    padding:0;
+    margin:0;
+    flex-wrap:wrap;
+}
+.header-stick{
+    background-color: var(--deep-grey);
+    display: flex;
+    width:100%;
+    min-height: 8vh;
+    flex-wrap:wrap;
+    padding:0;
+    margin:0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    /* 
+        display:flex;
+        transforma os elementos dentro de header como flex para 
+        direciona-los conforme seja necessário
+
+        8vh;
+        vh é a viewport height ou seja dimensiona o conteúdo com base na
+        dimensão height da tela do usuário
+    */ 
+}
+header .stick{
+    background-color: var(--blue);
+}
+#logo-header{
+    display: flex;
+    align-items: center;
+    /* alinhando os items no centro */
+}
+#logo-header a{
+    text-decoration: none;
+}
+#logo-header img{
+    width:6vw;
+    height: 10vh;
+}
+#logo-header span{
+    text-align: center;
+    font-size: 3em; 
+    /* e.m também é um tipo de escala parecida como viewport
+     onde dimensiona com base na tela do usuário ao invés de se utilizar por pt ou px
+    */
+    background: linear-gradient(to top, #5EBBF1 50%, #2E62A3 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+    /*estilizando a fonte de maneira a ficar com um gradiente entre as cores*/
+}
+
+#nav-header{
+    display: flex;
+    margin-left: 5vw;
+}
+
+#nav-header ul li{
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: center;
+    margin-top: 3vh;
+    margin-left: 5vw;
+}
+
+a.glow, a.glow:hover, a.glow:focus{
+     /* padroninzando o estilo do a para quando ele estiver
+    normal, hover(passando o mouse), focus( mouse focado)
+    */
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+    -webkit-transition: 500ms linear 0s;
+    -moz-transition: 500ms linear 0s;
+    -o-transition: 500ms linear 0s;
+    /* tags -webkit- -moz- -o- para suportar em alguns navegadores diferentes
+    como firefox4, safari 5 e opera11,12..
+    */
+    transition: 500ms linear 0s; 
+    /* animação de transição */
+    outline: 0 none;
+}
+
+a.glow:hover, a.glow:focus{
+    /* estilizando o a para quando ele estiver hover ou focado*/
+    color: white;
+    text-shadow: -1px 1px 8px #eedcdc, 1px -1px 8px white;
+     /* 
+     text shadow gera uma sombra no texto,
+      estilizando para simular um efeito glow
+    */
+    font-size:2.3em;
+}
+
+.rounded{
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius:100%;
+    width: 25vw;  
+    /* 
+        02vw;
+        vw é a viewport width ou seja dimensiona o conteúdo com base na
+        dimensão width da tela do usuário
+    */
+    height: 50vh;
+    box-shadow: 5px 5px 25px rgb(46, 42, 42);
+     /* 
+      efeito de sombra na box
+    */
+}
+
+.fundador{
+    width: 25vw;
+    height: 60vh;
+    box-shadow: 5px 5px 25px rgb(46, 42, 42);
+}
+
+#row-direction{
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+#welcome{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    min-width: 50vw;
+    min-height: 100vh;
+    background-color: var(--blue);
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 55%;
+    padding:2vw;
+    /* 
+      display flex, também é conhecido como flexbox
+      uma forma de agrupando de items em caixas
+      justify-content: centraliza os elementos ao centro da box,
+    */
+}
+
+#align-center{
+    margin-bottom: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 50vh;
+    /*
+    flex-direciton também é uma propriedade da flexbox,
+    direcionando os items dentro dela para um padrão, nesse caso coluna.
+    
+    align-items: alinha os items com base na direção da flexbox,
+    nesse caso coluna ou seja o centro da coluna
+    */
+}
+
+#align-center h1{
+    font-size: 4em;
+    margin-top: 1.5vh;
+}
+
+#align-center p{
+    font-size: 1.5em;
+    margin-top: 1.5vh;
+}
+#slider{
+    margin: 0 auto;
+    max-width: 40vw;
+    height: 70vh;
+    overflow: hidden;
+    margin-top: 5vw;
+}
+#slides{
+    display:flex;
+    width: 400%;
+    height: 90vh;
+}
+#slides input{
+    display:none;
+}
+
+.slide{
+    transition:0.5s;
+    position: relative;
+}
+.slide img{
+    width: 40vw;
+    height: 70vh;
+    border-radius: 2%;
+
+}
+#size{   
+    width: 40vw;
+    height: 70vh;
+    box-shadow: 5px 5px 25px rgb(46, 42, 42);
+    border-radius: 2%;
+}
+.manual-navigation{
+    position:absolute;
+    width: 40vw;
+    margin-top: 65vh;
+    display:flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid var(--blue);
+    padding: 5px;
+    border-radius: 1vw;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 4vw;
+}
+.manual-btn:hover{
+    background-color:var(--white);
+}
+#radio1:checked ~ .first{
+    margin-left:0;
+}
+#radio2:checked ~ .first{
+    margin-left:-40vw;
+}
+#radio3:checked ~ .first{
+    margin-left: -80vw;
+}
+#radio4:checked ~ .first{
+    margin-left: -120vw;
+}
+
+.navigation-auto div{
+    border: 2px solid var(--blue);
+    padding: 5px;
+    cursor:pointer;
+    transition: 1s;
+    border-radius: 1vw;
+}
+.navigation-auto{
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+    height: 1.5vh;
+    margin-top: 65vh;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 4vw;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: white;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: white;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: white;
+}
+.footer-style{
+    background-color: var(--blue);
+    display: flex;
+    width:100%;
+    min-height: 25vh;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vh;
+}
+
+.footer-style h1,p{
+    font-size: 2em;
+    margin-top: 1.5vh;
+    color:white;
+}
+
+
+#email{
+    background-color: var(--deep-grey);
+    font-size: 2em;
+    margin-top: 2vh;
+    width: 35vw;
+    color:white;
+    outline: none;
+}
+
+#politica{
+    width: 100%;
+    min-height: 10vh;
+    margin-top: 1.5vh;
+    background-color: var(--deep-grey);
+    display: flex;
+    flex-direction: column;
+    color:white;
+    align-items: center;
+    padding-top: 4vh;
+}
+#politica span{
+    margin: 1vw;
+}
+
+#politica a{
+    text-decoration: none;
+    color:white;
+}
+#wallpaper{
+    background-image: url(./img/wallpaper_bando.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: right;
+    min-height: 100vh;
+}
+
+#objetivo{
+    display:flex;
+    text-align: center;
+    padding:5vw;
+    background-color: rgb(0, 0, 0,0.96);
+    max-width: 35vw;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 0%;
+}
+
+#objetivo h1{
+    color:var(--blue);
+}
+
+.store{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./img/logo_onepiece.png);
+    background-size: 5%;
+    flex-direction: column;
+}
+
+#container{
+    min-height: 100vh;
+    max-width: 80vw;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 2vw;
+    /* flex-wrap é uma propriedade da flex box
+    que faz que quando os items chegam no limite da width
+    eles se encaixem no espaço livre abaixo.
+    */
+}
+
+#container img{
+    width: 20vw;
+    height: 40vh;
+    border-radius: 5px;
+    box-shadow: 3px 3px 25px rgb(46, 42, 42);
+}
+
+#produto{
+    margin-left: 2vw;
+    margin-top: 2vh;
+    max-width: 20vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#produto span{
+    margin-top: 5px;
+    color:var(--black);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#produto a{
+    text-decoration: none;
+}
+
+.price{
+    display: flex;
+}
+
+#price span{
+    margin-right: 5px;
+    color: var(--black);
+    font-weight: normal;
+}
+
+#price #desconto{
+    color: var(--deep-grey);
+    text-decoration: line-through;
+}
+
+#pagination{
+    min-height: 8vh;
+    min-width: 80vw;
+    background-color:var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pagination a{
+    margin:5px;
+    color:var(--black)
+}
+
+#btn{
+    border:none;
+    border:10px;
+    cursor:pointer;
+    background-color: transparent;
+     /*cursor: estiliza o cursor quando passar no elemento */
+}
+
+#fundador-content{
+    min-width: 50vw;
+    max-height: 100vh;
+    background-image: url(./img/wallpaper_bando.jpg);
+    background-size:100vw;
+    background-position: 95vw;
+}
+#box{
+    display: flex;
+    padding-top: 4vh;
+    flex-direction: column;
+    align-items: center;
+    min-width: 50vw;
+    min-height: 100vh;
+    background-color:rgb(0, 0, 0,0.80);
+    text-align: center;
+}
+#box h1{
+    font-size: 3em;
+    margin-top: 1.5vh;
+    color:var(--blue);
+}
+
+#box p{
+    font-size: 2em;
+    margin-top: 1.5vh;
+}
+#sobre{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 5vh;
+    align-items: center;
+    min-width: 50vw;
+}
+#sobre p{
+    color:black;
+    margin:10px;
+    font-size: 1.5em;
+}
+#sobre h1{
+    font-size: 2.8em;
+    margin-top: 1vh;
+}
+#local{
+    display: flex;
+    justify-content: left;
+    max-height: 90vh;
+    min-width: 100vw;
+}
+#local-info{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding:5vw;
+    background-color: rgb(0, 0, 0);
+    min-width: 50vw;
+    justify-content: center;
+    align-items: center;
+}
+#local h1{
+    font-size: 2.8em;
+    color:var(--blue);
+}
+#local iframe{
+    margin-top:3vh;
+}
+#local img{
+    display: block;
+    min-width:100%;
+    min-height:100vh;
+}
+#overflow{
+    width: 100vw;
+    min-height: 80vh;
+    overflow-y: hidden;
+}
+#formulario{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./img/logo_onepiece.png);
+    background-size: 5%;
+    flex-direction: column;
+}
+#box-forms{
+    /* min é uma maneira de limitar
+    o tamanho para telas diferentes, isso é
+    no min-width: 50vw = no minimo o elemento vai ocupar 50% da viewport
+    */
+    min-height: 100vh;
+    min-width: 50vw;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#form-style{
+    margin: 1vh;
+    min-height: 50vh;
+    min-width: 30vw;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:1vw;
+    border-radius: 5px;
+
+}
+#form-style fieldset{
+    width: 30vw;
+    font-size: 2em;
+    display:flex;
+    flex-direction: column;
+    padding:2vw;
+}
+#form-style legend{
+    padding:1vw;
+    background-color: var(--black);
+    color:white;
+    border-radius: 5px;
+    border: 1px solid var(--black);
+    text-align: center;
+}
+.inputbox{
+    margin:1vh;
+    position: relative;
+}
+.inputUser{
+    outline: none;
+    background: none;
+    border:none;
+    border-bottom: 1px solid white;
+    color:white;
+    font-size: 0.8em;
+    min-width:20vw;
+}
+.labelInput{
+    position:absolute;
+    right:0vw;
+    width:100%;
+    pointer-events: none; /* qualquer lugar que eu clicar dentro do input vai executar a ação */
+    transition: 0.5s;
+}
+.inputUser:focus ~ .labelInput, .inputUser:valid ~ .labelInput{ 
+    /* quando focar no input vai ocorrer uma ação(modificação) no label se eles estiver validos */
+    position:absolute;
+    bottom:3.1vh;
+    font-size: 0.5em;
+    color:white;
+}
+.msg{
+    outline: none;
+    background: var(--deep-grey);
+    border:none;
+    border-bottom: 1px solid white;
+    color:var(--black);
+    font-size: 0.8em;
+    color:whitesmoke
+}
+#data{
+    border:none;
+    padding:0.8vw;
+    border-radius: 10px;
+    outline: none;
+    font-size: 0.5em;
+    margin-top: 1vh;
+}
+#submit{
+    background-image: linear-gradient(to top, #5EBBF1 50%, #2E62A3 100%);
+    width: 25vw;
+    height: 5vh;
+    font-size: 0.8em;
+    border:none;
+    border-radius: 10px;
+    cursor:pointer;
+    align-self: center;
+}
+#submit:hover{
+    background-image: linear-gradient(to top, rgb(94, 160, 241) 50%, rgb(50, 98, 163) 100%);
+}
