@@ -29,16 +29,33 @@
     <br><br>
 
     <!--
+      Alinhamento responsivo -
+      class text-<tela>-<alinhamento>
       tela: sm, md, lg, xl
       alinhamento: center, left, right
     -->
-    <p> tela &gt;= 576px</p> <!--Small (sm)-->
-    <p> tela &gt;= 768px</p> <!--Medium (md)-->
-    <p> tela &gt;= 992px</p> <!--Large (lg)-->
-    <p> tela &gt;= 1200px</p> <!---Extra Large(xl)-->
+    <p class="text-sm-right"> tela &gt;= 576px</p> <!--Small (sm)-->
+    <p class="text-md-right"> tela &gt;= 768px</p> <!--Medium (md)-->
+    <p class="text-lg-right"> tela &gt;= 992px</p> <!--Large (lg)-->
+    <p class="text-xl-right"> tela &gt;= 1200px</p> <!---Extra Large(xl)-->
     
+    <!--Elemento block para inline-->
+    <h1 class="bg-success d-inline">Lorem ipsum dolor.</h1>
+    <p class="bg-success d-inline">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia minima quas, illum, quidem sed amet eaque sit est delectus tempora asperiores deleniti provident quos repellendus. Laboriosam molestias harum perspiciatis quisquam!</p>
 
+    <br><br>
 
+    <span class="bg-success d-block">Lorem ipsum dolor </span>
+    <br>
+    <span class="bg-success d-block">Lorem ipsum dolor </span>
 
+    <br>
+    <br>
+    <!--Elemento inline block-->
+    <div class="bg-warning">
+      <h3 class="bg-success d-inline-block">Lorem ipsum</h3>
+      <h3 class="bg-success d-inline-block" style="margin-top:50px;">Lorem ipsum </h3>
+    </div>
+    
   </body>
 </html>
