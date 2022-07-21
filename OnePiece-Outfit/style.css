@@ -35,6 +35,7 @@ body{
     flex-wrap:wrap;
 }
 .header-stick{
+    z-index: 1;
     background-color: var(--deep-grey);
     display: flex;
     width:100%;
@@ -221,6 +222,7 @@ a.glow:hover, a.glow:focus{
     width: 40vw;
     height: 70vh;
     border-radius: 2%;
+    z-index: 0;
 
 }
 #size{   
